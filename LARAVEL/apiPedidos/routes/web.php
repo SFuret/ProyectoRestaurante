@@ -14,5 +14,5 @@ use App\Models\Mesa;
 | be assigned to the "web" middleware group. Make something great!
 |
 */
-Route::apiResource('mesas', App\Http\Controllers\Api\MesaController::class);
+//Route::apiResource('mesas', App\Http\Controllers\Api\MesaController::class);
 

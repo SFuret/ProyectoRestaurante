@@ -1,6 +1,8 @@
 <?php
 
 use App\Http\Controllers\Api\MesaController;
+use App\Http\Controllers\SuministroController;
+use App\Http\Controllers\UserController;
 use App\Models\User;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Hash;
@@ -25,3 +27,7 @@ Route::post('/login', function (Request $request) {
 });
 
 Route::apiResource('mesas', MesaController::class);
+
+Route::apiResource('users', UserController::class);
+
+Route::apiResource('suministros', SuministroController::class);
